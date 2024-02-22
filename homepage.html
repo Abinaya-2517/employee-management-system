@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Library Management System</h1>
+    <div class="filters">
+      <input type="text" id="titleInput" placeholder="Filter by Title">
+      <input type="text" id="authorInput" placeholder="Filter by Author">
+      <input type="text" id="subjectInput" placeholder="Filter by Subject">
+      <input type="date" id="publishDateInput" placeholder="Filter by Publish Date">
+      <button onclick="filterBooks()">Apply Filters</button>
+    </div>
+    <div id="booksList">
+      <table id="booksTable" action="/book" method="">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Subject</th>
+            <th>Publish Date</th>
+            <th>Books Count</th>
+          </tr>
+        </thead>
+        <tbody id="booksTableBody">
+          <!-- Book entries will be added here dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="homepage.js"></script>
+</body>
+</html>

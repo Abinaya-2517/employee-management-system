@@ -1,0 +1,32 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters input {
+  margin-right: 10px;
+}
+
+#booksList {
+  margin-top: 20px;
+}
+
+#booksTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#booksTable th, #booksTable td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#booksTable th {
+  background-color: #f2f2f2;
+}
